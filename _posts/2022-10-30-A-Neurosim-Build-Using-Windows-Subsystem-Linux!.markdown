@@ -2,9 +2,8 @@
 layout: post
 title:  "A Neurosim Build Using Windows Subsystem Linux!"
 date:   2022-10-30 21:05:44 -0400
-categories: WSL NEURON NetPyNE 
+categories: WSL NEURON NetPyNE Python
 ---
-## About
 Windows Subsystem Linux is a powerful tool that allows developers on Windows to run a GNU/Linux environment directly on Windows, unmodified, without requiring the overhead of traditional VM or dualboot setup. 
 If you are a traditional Windows User who is interested in learning GNU/Linux, WSL can serves as a very easy first step--letting you keep the creature comforts of working with Microsoft development tools while also giving you the ability to work with the a highly versatile and popular (i.e. documented) OS used in development.
 
@@ -32,7 +31,7 @@ Windows Subsystem Linux<br>
     `wsl --install`<br>
 3. Reboot your system
 4. Start Ubuntu on Windows<br>
-Thats it! You now have access to your subsystem linux, which you will be able to interact with through the terminal that just opened.<br>
+Thats it! You now have access to your subsystem Linux, which you will be able to interact with through the terminal that just opened.<br>
 
 ### NOTE: Accessing your Windows/Linux files
 Within your linux subsystem, you can access your Windows files under the directory `/mnt`. You can change to this directory with command `cd /mnt` from the Ubuntu  <br>
@@ -60,5 +59,5 @@ Within your Windows machine, you can access your Linux files under the directory
 12. Execute the following lines of code to see if the imports are correct:<br>
     `from neuron import h`<br>
     `from netpyne import specs`<br>
-Thats it! You now are running NetPyNE and NEURON on your Linux VM<br>
+Thats it! You now are running NetPyNE and NEURON on your subsystem Linux VM<br>
 
