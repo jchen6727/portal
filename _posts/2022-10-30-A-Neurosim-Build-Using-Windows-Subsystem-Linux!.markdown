@@ -59,5 +59,5 @@ Within your Windows machine, you can access your Linux files under the directory
 12. Execute the following lines of code to see if the imports are correct:<br>
     `from neuron import h`<br>
     `from netpyne import specs`<br>
-Thats it! You now are running NetPyNE and NEURON on your subsystem Linux VM<br>
+Thats it! You now are running NetPyNE and NEURON on your subsystem Linux<br>
 
