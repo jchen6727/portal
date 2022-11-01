@@ -21,7 +21,7 @@
 title: "#1E205D"
 email: jchen.6727@gmail.com
 description: >- # this msans to ignore newlines until "baseurl:"
-  MD, postdoc in NYC. I love Python. I left residency so I wouldn't have to think about commiting suicide everday. This is my site.
+  MD, postdoc in NYC. I love Python. This is my site.
 #baseurl: "/portal" # the subpath of your site, e.g. /blog
 url: "https://jchen6727.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dontwgetshme
