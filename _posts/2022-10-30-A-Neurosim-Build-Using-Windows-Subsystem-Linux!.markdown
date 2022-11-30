@@ -27,15 +27,17 @@ Windows Subsystem Linux<br>
 
 ### How to set up your Virtual Machine
 1. Start Windows PowerShell as an administrator
-2. Use Windows PowerShell to install Linux<br>
-    `wsl --install`<br>
+2. Use Windows PowerShell to install Linux with `wsl --install`
+![](../images/wsl_install.png)
 3. Reboot your system
-4. Start Ubuntu on Windows<br>
-Thats it! You now have access to your subsystem Linux, which you will be able to interact with through the terminal that just opened.<br>
+4. The Ubuntu subsystem will now be accessible as an app in windows.
+![](../images/ubuntu.png)![](../images/ubuntu_startup.png)
+Thats it! You now have access to your subsystem Linux, create your profile username and password through the terminal.<br>
 
 ### NOTE: Accessing your Windows/Linux files
 Within your linux subsystem, you can access your Windows files under the directory `/mnt`. You can change to this directory with command `cd /mnt` from the Ubuntu  <br>
 Within your Windows machine, you can access your Linux files under the directory `\\wsl$`. By opening File Explorer, you can view all files in your linux subsystem by replacing the entry in the left navigation bar with `\\wsl$`<br>
+![](../images/file_access.png)
 
 ### Setting up your Python environment - Anaconda installation, 
 1. Get the Linux Anaconda Installer here: https://www.anaconda.com/
@@ -44,20 +46,22 @@ Within your Windows machine, you can access your Linux files under the directory
     `\\wsl$\Ubuntu\tmp`<br>
 4. Move your Linux Anaconda Installer to your Ubuntu\tmp directory
 5. Start Ubuntu on Windows
-6. In your Linux VM perform the following steps:
+6. In your Linux subsystem perform the following steps:
 7. Navigate to your tmp directory using:<br>
-    `cd /tmp`<br>
+    `$ cd /tmp`<br>
 8. run the shell script with the following command:<br>
-    `bash Anaconda3-xxxx.xx-Linux-x86_64.sh`<br>
+    `$ bash Anaconda3-xxxx.xx-Linux-x86_64.sh`<br>
     you can autocomplete the line by using the Tab button<br>
-9. Restart your Linux VM shell with:<br>
-    `source ~/.bashrc`<br>
-10. Install NEURON and NetPyNE with Python's built-in installer `pip`:<br>
-    `pip install neuron` <br>
-    `pip install netpyne`<br>
+    type `yes` when prompted by the installer<br>
+9. Restart your Linux subsystem shell with:<br>
+    `$ source ~/.bashrc`<br>
+10. Install NEURON and NetPyNE from the Linux subsytem shell with Python's built-in installer `pip`:<br>
+    `$ pip install neuron` <br>
+    `$ pip install netpyne`<br>
 11. Run Python
 12. Execute the following lines of code to see if the imports are correct:<br>
-    `from neuron import h`<br>
-    `from netpyne import specs`<br>
+![](../images/python_imports.png)
+    `>>> from neuron import h`<br>
+    `>>> from netpyne import specs`<br>
 Thats it! You now are running NetPyNE and NEURON on your subsystem Linux<br>
 
