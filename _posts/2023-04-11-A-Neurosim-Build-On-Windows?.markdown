@@ -63,4 +63,4 @@ Again, these instructions and images should be the same as found on Anaconda's o
 
 ### NOTE: NEURON and Anaconda
 In our setup, NEURON and Anaconda are handled separately (instead of handling NEURON as a Python package within an Anaconda environment). We have access to NEURON within the Anaconda prompt through paths configured through the NEURON installer (why Set DOS Environment should be checked)
-[](https://raw.githubusercontent.com/jchen6727/portal/main/images/windows_path.png)
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/windows_path.png)
