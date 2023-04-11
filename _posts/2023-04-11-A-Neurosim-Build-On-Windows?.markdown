@@ -24,23 +24,37 @@ NEURON<br>
 [https://neuron.yale.edu/neuron/](https://neuron.yale.edu/neuron/)<br>
 
 ## Steps
-On Windows, we will handle the `Anaconda` and `NEURON` installations separately. First, we will install Anaconda following [their recommended instructions](https://docs.anaconda.com/anaconda/install/windows/).
+On Windows, we will handle the `Anaconda` and `NEURON` installations separately. First, we will install Anaconda following [their recommended instructions](https://docs.anaconda.com/anaconda/install/windows/). Then, we will install NEURON through its own `.exe`. Finally, we will create a `dev` Anaconda environment and install `NetPyNE` within `dev`.
 
 ### Installing Anaconda and Running Anaconda
 Again, these instructions and images should be the same as found on Anaconda's own installation guide. <br>
-1. Download the Windows [Anaconda installer](https://www.anaconda.com) `.exe`
-2. Run the installer .exe
-3. For the purposes of running `NEURON` and `NetPyNE`, there is no reason to change the initial recommended settings. These include:
-    1. Installation for Just Me
-    2. Default Path
-    3. Create Start Menu Shortcuts, Register Anaconda3 as My Default Python
+1. Download the Windows [Anaconda installer](https://www.anaconda.com) `.exe`<br>
+2. Run the installer .exe<br>
+3. For the purposes of running `NEURON` and `NetPyNE`, there is no reason to change the initial recommended settings. These include:<br>
+    1. Installation for Just Me<br>
+    2. Default Path<br>
+    3. Create Start Menu Shortcuts, Register Anaconda3 as My Default Python<br>
+4. Try running the various Anaconda tools. The `Anaconda Powershell Prompt` will act as our `terminal` on Windows.<br>
 
 ### Installing NEURON
-1. Download the Windows [NEURON installer](https://neuron.yale.edu/neuron/download) `.exe`
-2. Run the installer .exe
-    1. Running the installer will prompt a Windows Defender warning as it is not trusted. You will have to navigate through this warning.
-    2. You may wish to change the installation path. For the purposes of running `NEURON` and `NetPyNE` with `Anaconda`, you should select *all* components for install, but at *the minimum* should include:
-        1. NEURON X.X.X AMD64
-        2. Associate .hoc and .nrnzip
-        3. Set DOS environment
-3. The installer will set (if set DOS environment is checked) the appropriate paths to run the NEURON toolkit. This includes  
+1. Download the Windows [NEURON installer](https://neuron.yale.edu/neuron/download) `.exe`<br>
+2. Run the installer .exe<br>
+    1. Running the installer will prompt a Windows Defender warning as it is not trusted. You will have to navigate through this warning.<br>
+    2. You may wish to change the installation path. For the purposes of running `NEURON` and `NetPyNE` with `Anaconda`, you should select *all* components for install, but at *the minimum* should include:<br>
+        1. NEURON X.X.X AMD64<br>
+        2. Associate .hoc and .nrnzip<br>
+        3. Set DOS environment<br>
+3. Test the installation of NEURON by starting the `Anaconda Powershell Prompt` and then running `neuron` and `nrnivmodl` (there won't be anything to compile, but should get the same error warning). Try importing neuron in `ipython`.<br>
+![]()
+
+### Setting up a dev Anaconda environment, installing NetPyNE within dev
+1. Start the `Anaconda Powershell Prompt`
+2. Create a custom Anaconda `dev` environment and `activate` it<br>
+    `(base) PS > conda create --name dev --clone base`<br>
+    `(base) PS > conda activate dev`<br>
+3
+
+
+### NOTE: NEURON and Anaconda
+In our setup, NEURON and Anaconda are handled separately (instead of handling NEURON as a Python package within an Anaconda environment). We have access to NEURON within the Anaconda prompt through paths configured through the NEURON installer (why Set DOS Environment should be checked)
+
