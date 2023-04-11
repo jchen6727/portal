@@ -68,11 +68,12 @@ Within your Windows machine, you can access your Linux files under the directory
 12. Install NEURON and NetPyNE from the Linux subsytem shell with Python's built-in installer `pip`:<br>
     `(dev) $ pip install neuron` <br>
     `(dev) $ pip install netpyne`<br>
-13. Run Python<br>
-14. Execute the following lines of code to see if the imports are correct:<br>
-![](https://raw.githubusercontent.com/jchen6727/portal/main/images/python_imports.png)
+13. Try importing neuron and netpyne in `ipython` to see if the installation worked:<br>
+    `(dev) $ ipython -i`
     `>>> from neuron import h`<br>
     `>>> from netpyne import specs`<br>
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/python_imports.png)
+
 You now are running NetPyNE and NEURON on your subsystem Linux<br>
 ### NOTE: Instruction Set Architecture
 The multiple Linux installers available point to different shell scripts and repositories depending on your instruction set architecture.<br> 

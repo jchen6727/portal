@@ -35,6 +35,7 @@ Again, these instructions and images should be the same as found on Anaconda's o
     2. Default Path<br>
     3. Create Start Menu Shortcuts, Register Anaconda3 as My Default Python<br>
 4. Try running the various Anaconda tools. The `Anaconda Powershell Prompt` will act as our `terminal` on Windows.<br>
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/conda_n.png)
 
 ### Installing NEURON
 1. Download the Windows [NEURON installer](https://neuron.yale.edu/neuron/download) `.exe`<br>
@@ -45,16 +46,21 @@ Again, these instructions and images should be the same as found on Anaconda's o
         2. Associate .hoc and .nrnzip<br>
         3. Set DOS environment<br>
 3. Test the installation of NEURON by starting the `Anaconda Powershell Prompt` and then running `neuron` and `nrnivmodl` (there won't be anything to compile, but should get the same error warning). Try importing neuron in `ipython`.<br>
-![]()
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/anaconda_windows.png)
 
 ### Setting up a dev Anaconda environment, installing NetPyNE within dev
 1. Start the `Anaconda Powershell Prompt`
 2. Create a custom Anaconda `dev` environment and `activate` it<br>
     `(base) PS > conda create --name dev --clone base`<br>
     `(base) PS > conda activate dev`<br>
-3
-
+3. Install `NetPyNE` from the Anaconda environment using pip<br>
+    `(dev) PS > pip install netpyne`<br>
+4. Try importing neuron and netpyne in `ipython` to see if the installation worked:<br>
+    `(dev) > ipython -i`<br>
+    `>>> from neuron import h`<br>
+    `>>> from netpyne import specs`<br>
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/conda_nn.png)
 
 ### NOTE: NEURON and Anaconda
 In our setup, NEURON and Anaconda are handled separately (instead of handling NEURON as a Python package within an Anaconda environment). We have access to NEURON within the Anaconda prompt through paths configured through the NEURON installer (why Set DOS Environment should be checked)
-
+[](https://raw.githubusercontent.com/jchen6727/portal/main/images/windows_path.png)
