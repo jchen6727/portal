@@ -28,16 +28,16 @@ Windows Subsystem Linux<br>
 ### How to set up your Virtual Machine
 1. Start Windows PowerShell as an administrator
 2. Use Windows PowerShell to install Linux with `wsl --install`
-![](../images/wsl_install.png)
+![](https://github.com/jchen6727/portal/blob/main/images/wsl_install.png)
 3. Reboot your system
 4. The Ubuntu subsystem will now be accessible as an app in windows.
-![](../images/ubuntu.png)![](../images/ubuntu_startup.png)
+![](https://github.com/jchen6727/portal/blob/main/images/ubuntu.png)![](https://github.com/jchen6727/portal/blob/main/images/ubuntu_startup.png)
 Thats it! You now have access to your subsystem Linux, create your profile username and password through the terminal.<br>
 
 ### NOTE: Accessing your Windows/Linux files
 Within your linux subsystem, you can access your Windows files under the directory `/mnt`. You can change to this directory with command `cd /mnt` from the Ubuntu  <br>
 Within your Windows machine, you can access your Linux files under the directory `\\wsl$`. By opening File Explorer, you can view all files in your linux subsystem by replacing the entry in the left navigation bar with `\\wsl$`<br>
-![](../images/file_access.png)
+![](https://github.com/jchen6727/portal/blob/main/images/file_access.png)
 
 ### Setting up your Python environment - Anaconda installation, 
 1. Get the Linux Anaconda Installer here: https://www.anaconda.com/
@@ -55,13 +55,24 @@ Within your Windows machine, you can access your Linux files under the directory
     type `yes` when prompted by the installer<br>
 9. Restart your Linux subsystem shell with:<br>
     `$ source ~/.bashrc`<br>
-10. Install NEURON and NetPyNE from the Linux subsytem shell with Python's built-in installer `pip`:<br>
+10. Create a custom Anaconda `dev` environment and move to this environment<br>
+    `$ conda create --name dev --clone base`<br>
+    `$ conda active dev`<br>
+11. Set up your shell so that it automatically moves to the `dev` environment on startub<br>
+    `$ echo "echo "conda activate dev" >> ~/.bashrc`<br>
+12. Install NEURON and NetPyNE from the Linux subsytem shell with Python's built-in installer `pip`:<br>
+13. Create a custom anaconda environment using 
     `$ pip install neuron` <br>
     `$ pip install netpyne`<br>
-11. Run Python
-12. Execute the following lines of code to see if the imports are correct:<br>
-![](../images/python_imports.png)
+14. Run Python
+15. Execute the following lines of code to see if the imports are correct:<br>
+![](https://github.com/jchen6727/portal/blob/main/images/python_imports.png)
     `>>> from neuron import h`<br>
     `>>> from netpyne import specs`<br>
 Thats it! You now are running NetPyNE and NEURON on your subsystem Linux<br>
 
+### NOTE: Anaconda environments
+Anaconda environments help encapsulate Python programming environments--this is useful if you want to work on projects with different packages / libraries.<br>
+In this case, we are cloning the `base` environment into a `dev` environment. <br>
+When something breaks in this environment, we can simply remove the encapsulated environment and recreate it with `conda` commands. <br>
+Whereas if we accidentally corrupted the `base` environment, we may have to fix everything within Anaconda. <br>
