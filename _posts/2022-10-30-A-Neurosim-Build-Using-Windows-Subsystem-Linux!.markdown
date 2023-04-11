@@ -28,16 +28,16 @@ Windows Subsystem Linux<br>
 ### How to set up your Virtual Machine
 1. Start Windows PowerShell as an administrator
 2. Use Windows PowerShell to install Linux with `wsl --install`
-![](https://github.com/jchen6727/portal/blob/main/images/wsl_install.png)
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/wsl_install.png)
 3. Reboot your system
 4. The Ubuntu subsystem will now be accessible as an app in windows.
-![](https://github.com/jchen6727/portal/blob/main/images/ubuntu.png)![](https://github.com/jchen6727/portal/blob/main/images/ubuntu_startup.png)
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/ubuntu.png)![](https://raw.githubusercontent.com/jchen6727/portal/main/images/ubuntu_startup.png)
 Thats it! You now have access to your subsystem Linux, create your profile username and password through the terminal.<br>
 
 ### NOTE: Accessing your Windows/Linux files
 Within your linux subsystem, you can access your Windows files under the directory `/mnt`. You can change to this directory with command `cd /mnt` from the Ubuntu  <br>
 Within your Windows machine, you can access your Linux files under the directory `\\wsl$`. By opening File Explorer, you can view all files in your linux subsystem by replacing the entry in the left navigation bar with `\\wsl$`<br>
-![](https://github.com/jchen6727/portal/blob/main/images/file_access.png)
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/file_access.png)
 
 ### Setting up your Python environment - Anaconda installation, 
 1. Get the Linux Anaconda Installer here: https://www.anaconda.com/
@@ -66,7 +66,7 @@ Within your Windows machine, you can access your Linux files under the directory
     `$ pip install netpyne`<br>
 14. Run Python
 15. Execute the following lines of code to see if the imports are correct:<br>
-![](https://github.com/jchen6727/portal/blob/main/images/python_imports.png)
+![](https://raw.githubusercontent.com/jchen6727/portal/main/images/python_imports.png)
     `>>> from neuron import h`<br>
     `>>> from netpyne import specs`<br>
 Thats it! You now are running NetPyNE and NEURON on your subsystem Linux<br>
