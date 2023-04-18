@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Neurosim Build Using Windows Subsystem Linux!"
+title:  "A Neurosim Build Using Windows Subsystem Linux"
 date:   2022-10-30 21:05:44 -0400
 categories: Windows WSL NEURON NetPyNE Python
 ---

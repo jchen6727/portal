@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Neurosim Build Using Windows?"
+title:  "A Neurosim Build Using Windows"
 date:   2023-04-11 11:09:44 -0400
 categories: Windows NEURON NetPyNE Python
 ---
