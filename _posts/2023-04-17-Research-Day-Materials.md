@@ -15,12 +15,14 @@ Downstate fork of The Virtual Brain NetPyNE [github](https://github.com/suny-dow
 
 Or you can find out more about (→) [The Virtual Brain](https://www.thevirtualbrain.org/tvb/zwei), [NetPyNE](http://www.netpyne.org) and [NEURON](https://nrn.readthedocs.io/en/8.2.2/) (←)
 
-A 2 dimensional linear scale visualization of the computational complexity of a granular (microscale) simulation of a brain hemisphere:
+
+[](portal/docs/assets/res_4_17/poster.png)
+A 2 dimensional linear space visualization of the computational complexity of a granular (microscale) simulation of a brain hemisphere:
 
 <html>
 <body>
 
-<embed type="text/html" src="https://raw.githubusercontent.com/jchen6727/portal/main/images/res_4_17/multiscale_viz.html"  width="500" height="200">
+<embed type="html" src="https://raw.githubusercontent.com/jchen6727/portal/main/images/res_4_17/multiscale_viz.html"  width="500" height="200">
 
 </body>
 </html>
