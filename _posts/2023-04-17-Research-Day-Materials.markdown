@@ -15,12 +15,7 @@ Or you can find out more about (→) [The Virtual Brain](https://www.thevirtualb
 
 ## A rough estimate of computational cost:
 Below is a 2 dimensional linear space visualization of the computational complexity of a granular (microscale) simulation of the cortical surface of a brain's hemisphere (click on the image to access a plotly interactive graph):
-[![](https://raw.githubusercontent.com/jchen6727/portal/main/resources/r23_04_17/scales.png)](https://jchen6727.github.io/portal/resources/r23_04_17_0/multiscale_viz.html)
-
-
-
-
-
+[![](https://raw.githubusercontent.com/jchen6727/portal/main/resources/r23_04_17_0/scales.png)](https://jchen6727.github.io/portal/resources/r23_04_17_0/multiscale_viz.html)
 
 
 Addenda:
